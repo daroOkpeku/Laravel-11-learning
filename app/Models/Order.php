@@ -16,4 +16,13 @@ class Order extends Model
         'order_number',
         'price',
     ];
+
+
+    public function userSingle(){
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function userMany(){
+        return $this->belongsToMany(User::class, 'user_id');
+    }
 }

@@ -60,4 +60,10 @@ class PostController extends Controller
         return response()->json(['success'=>'it has been deleted'],200);
        }
     }
+
+
+    public function orderSingle(){
+       $order = Order::find(3);
+       return response()->json(['success'=>$order->userSingle]);
+    }
 }

@@ -15,6 +15,7 @@ Route::post('/createuser', 'createUser');
 Route::post('/login', 'login');
 Route::post('/ordercreate', 'orderCreate');
 Route::get('/singleuser', 'singleUser');
+Route::get('/ordersingle', 'orderSingle');
 });
 
 
